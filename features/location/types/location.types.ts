@@ -1,6 +1,5 @@
 /**
  * Bangladesh location types for bdapis.com API
- * API docs: https://bdapis.com
  */
 
 export interface BdDivision {
@@ -8,7 +7,6 @@ export interface BdDivision {
   division: string;
   /** Bangla name, e.g. "ঢাকা" */
   divisionbn: string;
-  /** Lat/long coordinates */
   coordinates?: string;
 }
 
@@ -17,18 +15,12 @@ export interface BdDistrict {
   district: string;
   /** Bangla name, e.g. "গাজীপুর" */
   districtbn: string;
-  /** Upazila list, e.g. ["Gazipur Sadar", "Kaliakair"] */
+  /** Upazila list */
   upazilla: string[];
-  /** Lat/long coordinates */
   coordinates?: string;
 }
 
-/** API response wrapper from bdapis.com */
 export interface BdApiResponse<T> {
-  status: {
-    code: number;
-    message: string;
-    date: string;
-  };
+  status: { code: number; message: string; date: string };
   data: T;
 }

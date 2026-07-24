@@ -95,7 +95,7 @@ export function LocationSelector({
         }
         disabled={!selectedDistrict}
         value={upazilaValue ?? null}
-        options={upazilas.map((u) => ({
+        options={upazilas.map((u: string) => ({
           value: u,
           label: u,
         }))}

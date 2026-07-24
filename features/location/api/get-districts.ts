@@ -1,4 +1,4 @@
-import { BdApiResponse, BdDistrict } from "../types";
+import { BdApiResponse, BdDistrict } from "../types/location.types";
 
 const BD_API_BASE = "https://bdapis.com/api/v1.2";
 

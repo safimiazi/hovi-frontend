@@ -11,8 +11,8 @@ import { useCart } from "@/lib/cart-context";
 import { useAuth } from "@/lib/auth-context";
 import { API_BASE } from "@/lib/api/client";
 import toast from "react-hot-toast";
-import {  getShippingCostByDivision } from "@/features/location";
 import { LocationSelector } from "@/features/location/components/LocationSelector";
+import { getShippingCostByDivision } from "@/features/location/lib/shipping";
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
